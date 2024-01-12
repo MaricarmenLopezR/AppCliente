@@ -21,7 +21,7 @@ router.post("/client", function(request, response, next){
         database.query(query,function (error, data) {
             if (data.length > 0) {
                 response.json({
-                    message: "BIENVENIDO..",
+                    message: "BIENVENIDO...",
                 });
             } else {
                 response.status(401).json({
