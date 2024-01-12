@@ -23,12 +23,10 @@ router.post("/client", function(request, response, next){
                 response.json({
                     message: "BIENVENIDO..",
                 });
-                console.log('Bienvenido al sistema');
             } else {
                 response.status(401).json({
                     message: "Datos incorrectos, ingrese nuevamente",
                 });
-                console.log('Datos incorrectos');
             }
         });
     }
